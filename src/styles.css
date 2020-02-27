@@ -1,0 +1,29 @@
+body {
+  margin:0;
+}
+
+#screen {
+  margin-top:-10vh;
+  background-color:black;
+  height:140vh;
+  width:100vw;
+}
+
+p {
+  color:black;
+}
+
+#bar {
+  content: "";
+  height:1vh;
+  width:1vw;
+  margin-top:40vh;
+  background-color:red;
+  animation:inc 2s;
+}
+
+@keyframes inc{
+  100% {
+    width:100vw;
+  }
+}

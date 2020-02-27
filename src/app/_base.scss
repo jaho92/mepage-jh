@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+$til: 'Titillium Web', ;
+$exo : 'Exo 2', ;
+$navFont : 'Odibee Sans', ;
+
+#main {
+  display:grid;
+  grid-template-columns:100vw;
+  grid-template-rows:10vh 0vh 90vh;
+}
+
+#content {
+  padding-top:5vh;
+  padding-left:2vw;
+  grid-row:3/4;
+}
+
+#test {
+  grid-row:2/3;
+}
+
+
+@media screen and (min-width:500px){
+  #main {
+    grid-template-rows:10vh 0vh 80vh;
+  }
+
+
+#content {
+  grid-row:3/4;
+}
+
+}

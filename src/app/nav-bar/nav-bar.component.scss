@@ -1,0 +1,89 @@
+@import '../base';
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+$navFont : 'Odibee Sans', ;
+
+nav {
+  margin-top:-15px;
+  grid-row:1/2;
+  font-size:1.2rem;
+  font-family:$navFont;
+  background-color:black;
+  color:white;
+  border-bottom:2px solid black;
+
+   a {
+    text-decoration:none;
+    color:white;
+
+    &:hover {
+      color:red;
+      text-decoration:underline;
+    }
+
+    &:visited{
+      text-decoration:none;
+      color:white;
+       &:hover {
+        color:red;
+        text-decoration:underline;
+    }
+    } 
+   }
+
+  h1 {
+    display:inline-block;
+    margin-left:5%;
+    &:hover {
+        color:white;
+        text-decoration:none;
+    }
+  }
+
+  .navItem {
+    display:inline-block;
+    margin-left:5%;
+    
+
+    &:nth-child(2){
+      margin-left:10%;
+    }
+  }
+  #test {
+    grid-row:2/3;
+  }
+}
+
+@media screen and (min-width:500px) and (max-width:999px){
+   nav {
+    font-size:2rem;
+
+    .navItem {
+      
+      margin-left:3%;
+
+      &:nth-child(2){
+        margin-left:15%;
+      }
+    }
+  }
+  #content {
+    grid-row:3/4;
+  }
+}
+
+@media screen and (min-width:1000px){
+  nav{
+    h1 {
+      font-size:3rem;
+    }
+
+  .navItem {
+   
+    &:nth-child(2){
+      margin-left:40%;
+    }
+  }
+  }
+
+}
